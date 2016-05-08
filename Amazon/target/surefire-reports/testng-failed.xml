@@ -17,6 +17,7 @@
     <classes>
       <class name="search.ItemSearch">
         <methods>
+          <include name="setUp"/>
           <include name="dropDownSearch"/>
         </methods>
       </class> <!-- search.ItemSearch -->

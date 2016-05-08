@@ -29,7 +29,7 @@ public class CommonAPI {
     public WebDriver driver = null;
     @Parameters({"usecloud","userName","accessKey","os","browserName","browserVersion","url"})
     @BeforeMethod
-    public void setUp(@Optional("false") boolean usecloud,@Optional("123nafees") String userName,@Optional("Choudhury2")
+    public void setUp(@Optional("false") boolean usecloud,@Optional("123nafeess") String userName,@Optional("ea94a554-de43-461b-b874-0fe364489fa6")
             String accessKey, @Optional("Windows 8") String os,@Optional("firefox") String browserName,@Optional("34")
                               String browserVersion,@Optional("http://www.cnn.com") String url)throws IOException {
         if(usecloud==true){
@@ -65,6 +65,7 @@ public class CommonAPI {
         DesiredCapabilities cap = new DesiredCapabilities();
         cap.setCapability("platform", os);
         cap.setBrowserName(browserName);
+        cap.setCapability("version",browserVersion);
         cap.setCapability("version",browserVersion);
         driver = new RemoteWebDriver(new URL("http://"+userName+":"+accessKey+
                 "@ondemand.saucelabs.com:80/wd/hub"), cap);
