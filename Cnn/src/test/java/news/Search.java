@@ -1,13 +1,13 @@
 package news;
-
 import base.CommonAPI;
-import org.openqa.selenium.By;
 import org.testng.annotations.Test;
+import reader.ReadNewsData;
 
 /**
  * Created by rrt on 4/23/2016.
  */
-public class Search extends CommonAPI{
+public class Search extends CommonAPI {
+    ReadNewsData readNewsData=new ReadNewsData();
 
     @Test
     public void searchNews() throws InterruptedException{

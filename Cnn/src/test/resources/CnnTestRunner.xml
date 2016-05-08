@@ -8,7 +8,7 @@
     <parameter name="accessKey" value="ea94a554-de43-461b-b874-0fe364489fa6"/>
     <parameter name="os" value="Windows 10"/>
     <parameter name="url" value="http://www.cnn.com"/>
-    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="browserversion" value="40"/>
 
     <test name="Home Page">
