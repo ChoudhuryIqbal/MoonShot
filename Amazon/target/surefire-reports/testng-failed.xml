@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Amazon App running on Firefox Browser]">
+  <parameter name="os" value="Windows 10"/>
+  <parameter name="accessKey" value="Choudhury2"/>
+  <parameter name="browserName" value="chrome"/>
+  <parameter name="usecloud" value="true"/>
+  <parameter name="userName" value="123nafees"/>
+  <parameter name="url" value="http://www.amazon.com"/>
+  <parameter name="browserversion" value="40"/>
+  <test name="Home Page">
+    <classes>
+      <class name="search.ItemSearch"/>
+    </classes>
+  </test> <!-- Home Page -->
+  <test name="Home Page(failed)">
+    <classes>
+      <class name="search.ItemSearch">
+        <methods>
+          <include name="dropDownSearch"/>
+        </methods>
+      </class> <!-- search.ItemSearch -->
+    </classes>
+  </test> <!-- Home Page(failed) -->
+</suite> <!-- Failed suite [Amazon App running on Firefox Browser] -->
